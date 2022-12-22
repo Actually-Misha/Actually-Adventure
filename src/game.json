@@ -1,0 +1,67 @@
+{
+    "paths":[{
+        "id": "0",
+        "text":"You awake within a strange cave, equipped with nothing but your clothes and wits.",
+        "options":[{
+            "text":"Examine the cave",
+            "nextId":"1A"
+        }, {
+            "text":"Leave the cave",
+            "nextId":"0C"
+        }]
+    }, {
+        "id": "1A",
+        "text":"You look about the rear of the cave, discovering a tight squeeze space where faint scratches and rare taps can be heard— seemingly far off. Closer to you, you're able to discover a bloodied note. Though you're able to read the note, via light from the cave's opening, you hesitate, becoming aware of the once distant sounds apparent closeness.",
+        "options":[{
+            "text":"Read the note",
+            "nextId":"-1A"
+        }, {
+            "text":"Pocket the note until later",
+            "gain": "Bloody note",
+            "nextId":"0B"
+        }]
+    }, {
+        "id": "-1A",
+        "text": "You decide to try and read the note, but find you're straining your eyes in the dark. Moreover, the note's stains aren't particularly helping its readability. Nonetheless, your eyes eventually adjust; but, your focus on the note averted your attention from the approaching noises that would otherwise be a cause for concern. A cringe sound of sharpened metal being dragged slowly through roughly edged stone. While you don't notice the approach, you become (and no sooner cease to be) aware of several thin and lengthy protrusion erupting from your chest in a growing pool of crimson hues.",
+        "options": [{
+            "text": "Try again",
+            "nextId": "0"
+        }]
+    }, {
+        "id": "0B",
+        "text": "You return to the centre of the cave, weary of the approaching sounds, and ponder two potential exits.",
+        "options":[{
+            "text":"Left opening",
+            "gain":"Hachett",
+            "nextId": "1B"
+        }, {
+            "text":"Rightward slope",
+            "nextId":"1C"
+        }]
+    }, {
+        "id": "0C",
+        "text": "On shaky feet, you take hesitant steps toward what you assume to be the cave's entrace. However, you find that light intrudes from two diverging paths.",
+        "options":[{
+            "text":"Left opening",
+            "gain":"Hachett",
+            "nextId": "1B"
+        }, {
+            "text":"Rightward slope",
+            "nextId":"1C"
+        }]
+    }, {
+        "id": "1C",
+        "text": "You approach a hole in the cave that arches downward at a small slant. Unlike the rest of the cave, this particular section seems to consists of a smoother material resembling marbles.\nAlthough it's' painless to touch or rub your hand across, you are still, initially, hesitant. Fortunately, a distant noise from the rear of the cave serves as encouragement.Thus, you leap face first into the opening and pull yourself through.\nAs you hoped, the smooth rock afforded you a painless trip. Thankful to have not emerged at the peak of a great descent, you suck up the light pain you're met with falling face first into a forest's floor.\nYou currently inhabit Otoki No Mori, a vast forest with outskirts known to be bordering two budding settlements. Toward the east stud Rakshasa and to the west Shigoko. You only know as much due to the oak-wood signs laid before you.\nWith your head skyward, you note the soon to be setting sun.",
+        "options": [{
+            "text": "Head east",
+            "nextId": "E0"
+        }, {
+            "text": "Head west",
+            "nextId": "W0"
+        }, {
+            "text": "Read Bloody note",
+            "nextId": "Read-Bloody-Note",
+            "requires": ["Bloody note"]
+        }]
+    }]
+}
