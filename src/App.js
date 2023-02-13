@@ -1,3 +1,4 @@
+import React from 'react';
 import GameModal from './components/GameModal';
 import game from './game.json';
 import './App.css';
